@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Crimson Pro', serif;
+  background-color: #faf0e6; /* Parchment-like color */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #3d2b1f;
+  color: #f5f0e1;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #a67c52;
+}
+header .main-logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f5f0e1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #a67c52;
+  border-bottom: 2px solid #a67c52;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Story Articles */
+.story {
+  margin-bottom: 40px;
+}
+.story h2, .story h3 {
+  color: #3d2b1f;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.story p, .story ul {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/* Branch Logos */
+.branch-logo {
+  display: block;
+  margin: 20px auto;
+  max-width: 250px;
+}
+
+/* Footer */
+footer {
+  background: #3d2b1f;
+  color: #f5f0e1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-top: 2px solid #a67c52;
+}
+
+/* Tab Content (initial hidden state handled in JS) */
+.tabcontent {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Fade in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
